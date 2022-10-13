@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+*{
+    margin: 0;
+    padding:0;
+	box-sizing: border-box;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 0.4fr 1.5fr 0.2fr 0.2fr; */
+    grid-template-areas: "sidebar header header header"
+                         "sidebar main main main"
+                         "sidebar content1 content2 content3"   
+                         "sidebar footer footer footer";
+    grid-gap: 0.2rem;
+}
+.content1{
+    background-color: lightsalmon;
+    grid-area: content1 ;
+}
+.content2{
+    background-color: aquamarine;
+    grid-area: content2 ;
+}
+.content3{
+    background-color: rgb(147, 196, 196);
+    grid-area: content3 ;
+}
+main{
+    background-color: lightgoldenrodyellow;
+    grid-area: main ;
+	display: grid;
+	grid-template-columns: 0.95fr 0.05fr;
+	grid-template-rows: 0.65fr 0.35fr;
+	grid-template-areas: "devinfo devpic"
+						 "experience1 devpic";
+   
+}
+.devinfo{
+	grid-area: devinfo;
+}
+header{
+    background-color: lightgreen;
+	font-family: 'Lobster', cursive;
+    grid-area: header ;
+    font-size: 4vw;
+    text-decoration-line: underline;
+	text-decoration-style: double;
+    display: grid;
+    place-items: center;
+}
+footer{
+    background-color: aliceblue;
+    grid-area: footer;
+    text-align: center;
+	padding: 15px;
+	display: grid;
+	place-items: center;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+	color: black;
+	text-decoration: underline;
+    margin-bottom: 10px
+}
+.sidebar{
+    background-color: lightcoral;
+    grid-area: sidebar ;
+    font-family: 'Macondo', cursive;
+    font-size: 1.2vw;
+    padding-bottom: 50px;
+	color: #fff;
+}
+.sidebar nav{
+    display:flex;
+    flex-direction: column;
+    margin-left: 20px;
+    padding-right: 20px;
+}
+
+.row{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1vw;
+    display: flex;
+	color: black;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-top: 20px;
+	
+}
+.name {
+	font-size: 2vw;
+	font-weight: bold;
+	font-family: 'Josefin Sans', sans-serif;
+	margin: 8px;
+}
+
+.about {
+	font-size: 2vw;
+	margin: 8px;
+}
+
+.moreabout {
+	font-size: 1.3vw;
+	font-family: 'Josefin Sans', sans-serif;
+	margin-top: 22px;
+	margin-left: 8px;
+}
+.hello {
+	font-size: 2.5vw;
+	font-family: 'Raleway', sans-serif;
+	margin: 8px;
+}
+.education {
+	font-size: 1.2vw;
+	padding: 20px;
+	padding-bottom: 4px;
+	text-decoration: underline
+}
+
+.hobbies {
+	font-size: 1.2vw;
+	padding: 20px;
+	padding-bottom: 4px;
+	text-decoration: underline
+}
+
+.address {
+	margin-top: 15px;
+	padding: 25px;
+	text-decoration: underline;
+	padding-bottom: 4px;
+	font-size: 1.2vw;
+}
+
+.skills {
+	padding: 25px;
+	text-decoration: underline;
+	padding-bottom: 4px;
+	font-size: 1.2vw;
+}
+
+#myskills {
+	margin-bottom: 20px;
+	padding-left: 20px;
+	font-size: 1vw;
+   
+}
+
+#myaddress {
+	margin-bottom: 20px;
+	padding-left: 20px;
+	font-size: 1vw;
+    list-style: none; 
+}
+
+#myeducation {
+	margin-bottom: 20px;
+	padding-left: 20px;
+	font-size: 1vw;
+}
+
+#myhobbies {
+	margin-bottom: 20px;
+	padding-left: 20px;
+	font-size: 1vw;
+}
+
+.courses {
+	padding: 25px;
+	text-decoration: underline;
+	padding-bottom: 4px;
+	font-size: 1.2vw;
+}
+
+#mycourses {
+	margin-bottom: 20px;
+	padding-left: 20px;
+	font-size: 1vw;
+}
+.dob {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+#mydob {
+	
+	
+}
+
+.mail {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+#mymail {
+	
+}
+.phone {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+#myphone {
+	
+}
+.devpic img {
+	border-radius: 50%;
+	width: 20vw;
+	/* height: 50vh; */
+	padding-top: 20px;
+	grid-area: devpic;
+}
+.experience1{
+	font-family: 'Abril Fatface', cursive;
+	font-size: 1.2vw;
+	grid-area: experience1;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 0.5fr 0.5fr;
+	grid-template-areas: "experience-title experience-title"
+						 "google microsoft"
+						 "facebook facebook";
+}
+.google{
+	grid-area: google;
+}
+.microsoft{
+	grid-area: microsoft;
+}
+.facebook{
+	grid-area: facebook;
+}
+.address,.education,.hobbies,.skills,.courses {
+	text-decoration: none;
+}
+@media only screen and (max-width: 768px) {
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 6fr 2fr 0.1fr 0.1fr 0.1fr 1fr;
+        grid-template-areas: "header"
+                             "main"
+                             "sidebar"
+                             "content1"
+                             "content2"
+                             "content3"
+                             "footer";
+    }
+	header{
+		padding:0.25rem;
+	}
+    .sidebar nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+	main{
+		grid-template-columns: 1fr;
+		grid-template-rows: 0.05fr 1fr;
+		grid-template-areas: "devpic"
+							 "devinfo"
+							 "experience1";
+		
+	   
+	}
+	.devpic{
+		padding-bottom: 10px;
+		text-align: center;
+	}
+	.devinfo {
+		text-align: center;
+	}
+	.experience1{
+		width: 60%;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+	.sidebar {
+		padding: 10px 0;
+	}
+	.address,.education,.hobbies,.skills,.courses {
+		margin-top: unset;
+		padding: unset;
+		text-decoration: none;
+		padding-bottom: unset;
+		font-size: 1.5vw !important;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.row{
+		padding-top: unset;
+		padding: 5px;
+		width: 40%;
+		margin: auto;
+		justify-content: space-evenly;
+	}
+	footer {
+		padding: 5px;
+		font-size: 10px;
+		margin-bottom: unset;
+	}
+}
